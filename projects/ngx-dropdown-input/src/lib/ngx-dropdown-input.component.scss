@@ -1,0 +1,12 @@
+:host {
+  position: relative;
+
+  .input-group {
+    display: inline-flex;
+  }
+
+  .dropdown-menu {
+    top: unset;
+    width: 100%;
+  }
+}
