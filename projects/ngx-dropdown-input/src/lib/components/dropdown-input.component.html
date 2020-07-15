@@ -1,0 +1,15 @@
+<div class="dropdown" ngxDropdown>
+  <div class="input-group">
+    <input type="text" class="form-control" [(ngModel)]="text" (change)="onTextChange()" [placeholder]="placeholder"
+      [attr.aria-label]="placeholder" ngxDropdownInput>
+    <div class="input-group-append">
+      <span role="button" class="input-group-text" ngxDropdownToggle>
+      </span>
+    </div>
+  </div>
+  <div class="dropdown-menu" ngxDropdownMenu>
+    <div class="dropdown-item" *ngFor="let option of options" (click)="onOptionSelect(option)">
+      {{option.text}}
+    </div>
+  </div>
+</div>

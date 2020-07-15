@@ -8,7 +8,7 @@ import { Option } from 'ngx-dropdown-input';
 })
 export class AppComponent {
   title = 'ngx-dropdown-input';
-
+  placeholder = 'Enter your name';
   options: Option[] = [
     {
       text: 'Option1',
