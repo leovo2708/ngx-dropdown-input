@@ -10,6 +10,7 @@ import { DropdownDirective } from '../directives/dropdown.directive';
 export class DropdownInputComponent {
   @Input() placeholder: string;
   @Input() options: Option[];
+  @Input() maxHeight = 400;
   @ViewChild(DropdownDirective) dropdown: DropdownDirective;
   text: string;
   filterOptions: Option[];

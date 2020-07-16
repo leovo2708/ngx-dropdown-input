@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Option } from 'ngx-dropdown-input';
+import cities from './cities.json';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +9,6 @@ import { Option } from 'ngx-dropdown-input';
 })
 export class AppComponent {
   title = 'ngx-dropdown-input';
-  placeholder = 'Enter your name';
-  options: Option[] = [
-    {
-      text: 'Option1',
-      value: 1
-    },
-    {
-      text: 'Option2',
-      value: '2'
-    }
-  ]
+  placeholder = 'Please choose your city';
+  options: Option[] = cities;
 }
